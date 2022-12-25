@@ -1,0 +1,40 @@
+@media(max-width: 912px) {
+    .icons-menu {
+      display: block;
+      position: absolute;
+      top: 53px;
+      right: 30px;
+      width: 30px;
+      height: 18px;
+      cursor: pointer;
+      z-index: 7;
+    }
+    .icons-menu span {
+      transition: 0.5s, 0s;
+      top: 8px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+    }
+    .icons-menu span:first-child {
+      top: 0;
+    }
+    .icons-menu span:last-child {
+      top: auto;
+      bottom: 0;
+    }
+    .icons-menu.active span {
+      transform: scale(0);
+      background-color: #000;
+    }
+    .icons-menu.active span:first-child {
+      transform: rotate(-45deg);
+      top: 8px;
+    }
+    .icons-menu.active span:last-child {
+      transform: rotate(45deg);
+      bottom: 8px;
+    }
+  }

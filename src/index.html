@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title":"Expedia"
+})
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            @@include('html/header.html', {})
+            <main class="page">
+                <section class="booking">
+                    <div class="booking__container">
+                        <div class="booking__content">
+                            <div class="booking__options options">
+                                <div class="options__nav">
+                                    <select name="" id="options__select">
+                                        <option value="">Stays</option>
+                                        <option value="">Flight</option>
+                                        <option value="">Cars</option>
+                                        <option value="">Packages</option>
+                                        <option value="">Things to do</option>
+                                    </select>
+                                </div>
+                                <ul class="options__list">
+                                    <li><a href="#" class="options__link">Stays</a></li>
+                                    <li><a href="#" class="options__link">Flight</a></li>
+                                    <li><a href="#" class="options__link">Cars</a></li>
+                                    <li><a href="#" class="options__link">Packages</a></li>
+                                    <li><a href="#" class="options__link">Things to do</a></li>
+                                </ul>
+                            </div>
+                            <div class="booking__fly fly">
+                                <div class="fly__row">
+                                    <div class="fly__column">
+                                        <input type="radio" id="flyChoice1" name="fly" value="one-way" checked>
+                                        <label for="flyChoice1">One way</label>
+                                    </div>
+                                    <div class="fly__column">
+                                        <input type="radio" id="flyChoice2" name="fly" value="return">
+                                        <label for="flyChoice2">Return</label>
+                                    </div>
+                                    <div class="fly__column">
+                                        <input type="radio" id="flyChoice3" name="fly" value="multi-city">
+                                        <label for="flyChoice3">Multi-city</label>
+                                    </div>
+                                </div>
+                                <div class="booking__passclass passclass">
+                                    <div class="passclass__column">
+                                        <a href="#">2 traveller<img src="@img/booking/Vector.png" alt=""></a>
+                                    </div>
+                                    <div class="passclass__column">
+                                        <a href="#">Economy<img src="@img/booking/Vector.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="booking__destinations destinations">
+                                <div class="destinations__row">
+                                    <div class="destinations__column">
+                                        <img src="@img/booking/Vector 1.png" alt="" class="destinations__depart">
+                                        <input type="text" placeholder="from" class="destinations__from">
+                                    </div>
+                                    <div class="destinations__change">
+                                        <img src="@img/booking/Vector 3.png" alt="" class="destinations__change-btn">
+                                        <img src="@img/booking/Vector 4.png" alt="" class="destinations__change-btn">
+                                    </div>
+                                    <div class="destinations__column">
+                                        <img src="@img/booking/Vector 2.png" alt="" class="destinations__depart">
+                                        <input type="text" placeholder="to" class="destinations__from">
+                                    </div>
+                                    <div class="destinations__dates-block">
+                                        <div class="destinations__dates-body">
+                                            <div class="destinations__dates-calendar">
+                                                <a href="#"><img src="@img/booking/Vector 5.png" alt=""></a>
+                                                <a href="#"><img src="@img/booking/Vector 6.png" alt=""></a>
+                                            </div>
+                                            <div class="destinations__dates-to">
+                                                <p class="destinations__dates-depart">Departing</p>
+                                                <p class="destinations__dates-date">10 Jul</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="destinations__dates-block2">
+                                        <div class="destinations__dates-body">
+                                            <div class="destinations__dates-calendar">
+                                                <a href="#"><img src="@img/booking/Vector 5.png" alt=""></a>
+                                                <a href="#"><img src="@img/booking/Vector 6.png" alt=""></a>
+                                            </div>
+                                            <div class="destinations__dates-to">
+                                                <p class="destinations__dates-depart">Returning</p>
+                                                <p class="destinations__dates-date">11 Jul</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="destinations__btn">
+                                    <a href="#" class="desttinations__btn btn">Search</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="recomendation">
+                    <div class="recomendation__container">
+                        <h2 class="recomendation__title title">Top Most Popular Destinations</h2>
+                        <div class="recomendation__body">
+                            <div class="recomendation__column recomendation__column-b">
+                                <div class="recomendation__block block-recomendation">
+                                    <div class="block-recomendation__column">
+                                        <div class="block-recomendation__column">
+                                            <div class="block-recomendation__item-l item">
+                                                <div class="item__block-l">
+                                                    <span class="item__name">Moraine Lake</span>
+                                                    <span class="item__location">Alberta, Canada</span>
+                                                </div>
+                                                <span class="item__image ibg">
+                                                    <img src="@img/recomendation/image 3.png" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block-recomendation__row">
+                                        <div class="block-recomendation__column">
+                                            <div class="block-recomendation__item block-recomendation__item-s item">
+                                                <div class="item__block">
+                                                    <span class="item__name">Hokokuji Bamboo Forest</span>
+                                                    <span class="item__location">Kamakura, Japan</span>
+                                                </div>
+                                                <span class="item__image ibg">
+                                                    <img src="@img/recomendation/image 6.png" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="block-recomendation__column">
+                                            <div class="block-recomendation__item block-recomendation__item-s item">
+                                                <div class="item__block">
+                                                    <span class="item__name">Kirkjufell</span>
+                                                    <span class="item__location">Grundarfjordur's,</br>Iceland</span>
+                                                </div>
+                                                <span class="item__image ibg">
+                                                    <img src="@img/recomendation/image 5.png" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recomendation__column">
+                                <div class="block-recomendation__item block-recomendation__item-h item">
+                                    <div class="item__block">
+                                        <span class="item__name">Cappadocia</span>
+                                        <span class="item__location">Anatolia,
+                                            </br>Turkey</span>
+                                    </div>
+                                    <span class="item__image ibg">
+                                        <img src="@img/recomendation/image 7.png" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="recomendation__column">
+                                <div class="block-recomendation__item block-recomendation__item-h item">
+                                    <div class="item__block">
+                                        <span class="item__name">Ubud</span>
+                                        <span class="item__location">Bali,
+                                            </br>Indonesia</span>
+                                    </div>
+                                    <span class="item__image ibg">
+                                        <img src="@img/recomendation/image 8.png" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="download">
+                    <div class="download__container">
+                        <h2 class="download__title title">Download
+                            Expedia App !</h2>
+                        <div class="download__body">
+                            <div class="download__item">
+                                <a href="#"><img src="@img/download/google-play-badge 1.png" alt=""></a>
+                            </div>
+                            <div class="download__item">
+                                <a href="#"><img src="@img/download/5a902db97f96951c82922874 1.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/footer.html', {})
+        </div>
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
